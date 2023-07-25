@@ -1,5 +1,6 @@
-#ifndef MONTY_H
-#define MONTY_H
+#ifndef MONTY
+#define MONTY
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -54,7 +55,6 @@ typedef struct bus_s
 	int lifi;
 }  bus_t;
 extern bus_t bus;
-bus_t bus = {NULL, NULL, NULL, 0};
 
 void _push(stack_t **head, unsigned int number);
 void _pall(stack_t **head, unsigned int number);
